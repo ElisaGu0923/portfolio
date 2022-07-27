@@ -1,0 +1,60 @@
+.personal_info_container {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	top: 0;
+	bottom: 0;
+	position: fixed;
+	width: 20%;
+}
+
+.middle::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+.top {
+	height: 35%;
+	background-color: #24242e;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	overflow-y: hidden;
+}
+
+#profile {
+	border-radius: 50%;
+	width: 30%;
+	margin: auto;
+}
+
+.name {
+	margin-bottom: 18px;
+	margin-top: 0;
+}
+
+.title {
+	margin: 0 0 14px 0;
+	color: #8c8c8e;
+	font-size: 14px;
+}
+
+.middle {
+	overflow-y: scroll;
+	height: 55%;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+	padding: 10px 30px;
+	background-color: #20212a;
+}
+
+.footer {
+	height: 10%;
+	background-color: #24242d;
+	display: flex;
+	align-items: center;
+
+	justify-content: center;
+}
+
+.footer > a {
+	margin: 0 10px;
+}
