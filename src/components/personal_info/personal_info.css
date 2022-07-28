@@ -85,3 +85,16 @@
 	font-weight: 700;
 	font-size: 16px;
 }
+
+#linkedIn,
+#github {
+	transition: 0.3s;
+}
+
+#linkedIn:hover {
+	color: #0b77b5 !important;
+}
+
+#github:hover {
+	color: #8c8c8e !important;
+}

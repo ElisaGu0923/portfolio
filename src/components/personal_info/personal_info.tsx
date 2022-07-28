@@ -62,10 +62,10 @@ function PersonalInfo() {
             </div>
             <div className='footer'>
                 <a href='https://google.com' target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faLinkedin} />
+                    <FontAwesomeIcon id='linkedIn' icon={faLinkedin} />
                 </a>
                 <a href='https://google.com' target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FontAwesomeIcon id='github' icon={faGithub} />
                 </a>
             </div>
         </div>
