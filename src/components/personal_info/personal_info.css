@@ -58,3 +58,30 @@
 .footer > a {
 	margin: 0 10px;
 }
+
+.card {
+	font-size: 15px;
+	padding: 5px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #414148;
+}
+
+.card > ul > li {
+	margin: 13px 0 13px 0;
+}
+
+.infoRowContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.infoDetail {
+	color: #8c8c8e;
+	font-size: 14px;
+}
+
+.cardTitle {
+	font-weight: 700;
+	font-size: 16px;
+}
