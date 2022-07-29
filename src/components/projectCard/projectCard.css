@@ -1,0 +1,15 @@
+.cardContainer {
+	max-width: 40%;
+	margin: 20px 40px;
+}
+
+.cardContainer > img {
+	width: 100%;
+	cursor: pointer;
+}
+
+.cardContainer:hover {
+}
+
+.cardBody {
+}

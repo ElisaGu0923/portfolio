@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './main_panel.css';
 import Typewriter from 'typewriter-effect';
+import Projects from '../projects/projects';
 
 function MainPanel() {
     const [mainContent, setMainContent] = useState("Home");
@@ -14,48 +15,55 @@ function MainPanel() {
                 <button onClick={() => setMainContent("Download")} className={mainContent === 'Download' ? 'active menuItem' : 'menuItem'}>CV Download</button>
             </div>
             {mainContent === "Home" ?
-
-                <div className="titleCard">
-                    <div className="titleContent">
-                        <h1>Hi, I'm Elisa</h1>
-                        <Typewriter
-                            options={{ loop: true }}
-                            onInit={(typewriter) => {
-                                typewriter
-                                    .typeString("I'm a full-stack developer")
-                                    .pauseFor(2500)
-                                    .deleteChars(20)
-                                    .pauseFor(500)
-                                    .typeString("React developer")
-                                    .pauseFor(2500)
-                                    .deleteChars(15)
-                                    .pauseFor(500)
-                                    .typeString("Software developer")
-                                    .pauseFor(2500)
-                                    .deleteChars(18)
-                                    .pauseFor(500)
-                                    .typeString("Unity developer")
-                                    .pauseFor(2500)
-                                    .deleteChars(15)
-                                    .pauseFor(500)
-                                    .typeString("third year CS student")
-                                    .pauseFor(2500)
-                                    .deleteChars(21)
-                                    .pauseFor(500)
-                                    .typeString("game enthusiast")
-                                    .pauseFor(2500)
-                                    .deleteChars(5)
-                                    .pauseFor(500)
-                                    .start();
-                            }}
-                        />
+                <>
+                    <div className="titleCard">
+                        <div className="titleContent">
+                            <h1>Hi, I'm Elisa</h1>
+                            <Typewriter
+                                options={{ loop: true }}
+                                onInit={(typewriter) => {
+                                    typewriter
+                                        .typeString("I'm a full-stack developer")
+                                        .pauseFor(2500)
+                                        .deleteChars(20)
+                                        .pauseFor(500)
+                                        .typeString("React developer")
+                                        .pauseFor(2500)
+                                        .deleteChars(15)
+                                        .pauseFor(500)
+                                        .typeString("Software developer")
+                                        .pauseFor(2500)
+                                        .deleteChars(18)
+                                        .pauseFor(500)
+                                        .typeString("Unity developer")
+                                        .pauseFor(2500)
+                                        .deleteChars(15)
+                                        .pauseFor(500)
+                                        .typeString("third year CS student")
+                                        .pauseFor(2500)
+                                        .deleteChars(21)
+                                        .pauseFor(500)
+                                        .typeString("game enthusiast")
+                                        .pauseFor(2500)
+                                        .deleteChars(5)
+                                        .pauseFor(500)
+                                        .start();
+                                }}
+                            />
+                        </div>
                     </div>
-                </div>
-                : mainContent === "Projects" ? <div> projects </div>
+                    <div className="experienceContainer">
+                        <p><span>3+</span>Years Experience</p>
+                        <p><span>2</span>Worked Companies</p>
+                        <p><span>10+</span>Projects</p>
+                    </div>
+                </>
+                : mainContent === "Projects" ? <Projects></Projects>
                     : mainContent === "History" ? <div> History</div>
                         : mainContent === "Contact" ? <div>Contact</div>
                             : mainContent === "Download" ? <div>Download</div>
                                 : null
+
             }
         </div>
     )

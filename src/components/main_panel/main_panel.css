@@ -64,3 +64,21 @@
 .titleContent > h1 {
 	font-size: 45px;
 }
+
+.experienceContainer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.experienceContainer > p {
+	margin: 0 20px;
+	font-size: 18px;
+}
+
+.experienceContainer > p > span {
+	color: #fec109;
+	font-size: 30px;
+	margin: 0 10px;
+	font-weight: 600;
+}

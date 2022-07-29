@@ -2,8 +2,8 @@
 	box-sizing: border-box;
 	background-color: #191923;
 	color: #ffffff;
-	height: 100vh;
 	padding: 2%;
+	min-height: 100vh;
 }
 
 .App-logo {
