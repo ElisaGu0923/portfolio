@@ -1,15 +1,22 @@
 .cardContainer {
-	max-width: 40%;
 	margin: 20px 40px;
 }
 
-.cardContainer > img {
+.projectCover {
 	width: 100%;
 	cursor: pointer;
 }
 
-.cardContainer:hover {
+.bulletPoint {
+	margin: 10px 0;
+}
+
+.showcaseImage {
+	width: 300px;
+	height: 200px;
 }
 
 .cardBody {
+	font-size: 18px;
+	padding-top: 20px;
 }

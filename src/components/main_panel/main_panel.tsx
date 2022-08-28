@@ -60,10 +60,18 @@ function MainPanel() {
                 </>
                 : mainContent === "Projects" ? <Projects></Projects>
                     : mainContent === "History" ? <div> History</div>
-                        : mainContent === "Contact" ? <div>Contact</div>
+                        : mainContent === "Contact" ? <div className='contactCard'>
+                            <div className="infoRowContainer">
+                                <p>Email:</p>
+                                <p className='infoDetail'>z53gu@uwaterloo.ca</p>
+                            </div>
+                            <div className="infoRowContainer">
+                                <p>Phone:</p>
+                                <p className='infoDetail'>1(647)867-0923</p>
+                            </div>
+                        </div>
                             : mainContent === "Download" ? <div>Download</div>
                                 : null
-
             }
         </div>
     )

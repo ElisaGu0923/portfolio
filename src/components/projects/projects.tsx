@@ -1,31 +1,35 @@
 import React, { useState } from 'react';
+import { Grid } from '@mui/material';
 import './projects.css';
 import ProjectCard from '../projectCard/projectCard';
-import cover from '../../assets/cover.jpg';
+import { Category } from '../Categories';
+import { projects } from '../../assets/projectsList';
 
 export interface Project {
+    category: Category,
     title: string,
     cover: any,
-    key: number
+    key: number,
+    imgs: any[],
+    description: string[]
+    link?: string
 }
 
 function Projects() {
-    const [active, setActive] = useState("All");
-
-    const projects: Project[] = [{ title: "project1", cover: cover, key: 1 }, { title: "project2", cover: cover, key: 2 }, { title: "project3", cover: cover, key: 3 }];
+    const [active, setActive] = useState(Category.ALL);
 
     return (
-        <>
+        <div className='projects'>
             <div className="projectsMenu">
-                <button onClick={() => setActive("All")} className={active === 'All' ? 'active projectsMenuItem' : 'projectsMenuItem'}>All</button>
-                <button onClick={() => setActive("Web")} className={active === 'Web' ? 'active projectsMenuItem' : 'projectsMenuItem'}>Web</button>
-                <button onClick={() => setActive("Unity")} className={active === 'Unity' ? 'active projectsMenuItem' : 'projectsMenuItem'}>Unity</button>
-                <button onClick={() => setActive("Softwares")} className={active === 'Softwares' ? 'active projectsMenuItem' : 'projectsMenuItem'}>Softwares</button>
+                <button onClick={() => setActive(Category.ALL)} className={active === Category.ALL ? 'active projectsMenuItem' : 'projectsMenuItem'}>All</button>
+                <button onClick={() => setActive(Category.WEB)} className={active === Category.WEB ? 'active projectsMenuItem' : 'projectsMenuItem'}>Web</button>
+                <button onClick={() => setActive(Category.GAMES)} className={active === Category.GAMES ? 'active projectsMenuItem' : 'projectsMenuItem'}>Games</button>
+                <button onClick={() => setActive(Category.SOFTWARES)} className={active === Category.SOFTWARES ? 'active projectsMenuItem' : 'projectsMenuItem'}>Softwares</button>
             </div>
-            <div className='cardsContainer'>
-                {projects.map(proj => (<ProjectCard {...proj}></ProjectCard>))}
-            </div>
-        </>
+            <Grid container className="Grid">
+                {active === Category.ALL ? projects.map(proj => (<Grid item xs={12} md={6}><ProjectCard {...proj}></ProjectCard></Grid>)) : projects.filter(proj => proj.category === active).map(proj => (<Grid item xs={12} md={6}><ProjectCard {...proj}></ProjectCard></Grid>))}
+            </Grid>
+        </div>
     )
 }
 

@@ -19,12 +19,12 @@ function PersonalInfo() {
                         <p className='infoDetail'>Canada</p>
                     </div>
                     <div className="infoRowContainer">
-                        <p>Faculty:</p>
+                        <p>Major:</p>
                         <p className='infoDetail'>Computer Science </p>
                     </div>
                     <div className="infoRowContainer">
                         <p>School:</p>
-                        <p className='infoDetail'>University of Waterloo</p>
+                        <p className='infoDetail'>&nbsp; University of Waterloo</p>
                     </div>
                 </div>
                 <div className="card">
@@ -42,7 +42,7 @@ function PersonalInfo() {
                         <p>Work Experience</p>
                     </div>
                     <div className="infoRowContainer">
-                        <p>Jave</p>
+                        <p>Java</p>
                         <p>Work Experience</p>
                     </div>
                     <div className="infoRowContainer">
