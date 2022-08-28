@@ -1,0 +1,32 @@
+.historyCardContainer {
+	width: 80%;
+	background-color: #24242e;
+	box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.history_title {
+	margin: 0 0 14px 0;
+	color: #8c8c8e;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.historyFirstLine {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.history_date {
+	height: 30px;
+	padding: 0 10px 0 10px;
+	color: #8c8c8e;
+	background-color: #1f1f29;
+	color: #8c8c8e;
+	align-items: center;
+	display: inline-flex;
+	border-radius: 15px;
+	font-size: 13px;
+}

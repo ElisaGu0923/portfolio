@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './main_panel.css';
 import Typewriter from 'typewriter-effect';
 import Projects from '../projects/projects';
+import History from '../history/history';
 
 function MainPanel() {
     const [mainContent, setMainContent] = useState("Home");
@@ -59,7 +60,7 @@ function MainPanel() {
                     </div>
                 </>
                 : mainContent === "Projects" ? <Projects></Projects>
-                    : mainContent === "History" ? <div> History</div>
+                    : mainContent === "History" ? <History></History>
                         : mainContent === "Contact" ? <div className='contactCard'>
                             <div className="infoRowContainer">
                                 <p>Email:</p>
