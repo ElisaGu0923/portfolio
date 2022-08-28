@@ -13,6 +13,7 @@ export interface Project {
     imgs: any[],
     description: string[]
     link?: string
+    year?: number
 }
 
 function Projects() {

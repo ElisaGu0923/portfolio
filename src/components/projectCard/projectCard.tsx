@@ -78,7 +78,8 @@ function ProjectCard(props: Project) {
 			</Popper>
 
 			<div className="cardBody">
-				{props.title}
+				<p>{props.title}</p>
+				{props.year && <p className='projectYear'>{props.year}</p>}
 			</div>
 		</div>
 	);

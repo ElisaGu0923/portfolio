@@ -17,6 +17,14 @@
 }
 
 .cardBody {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	font-size: 18px;
 	padding-top: 20px;
+}
+
+.projectYear {
+	color: #8c8c8e;
+	font-size: 14px;
 }

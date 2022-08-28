@@ -66,7 +66,7 @@ function MainPanel() {
                                 <p className='infoDetail'>z53gu@uwaterloo.ca</p>
                             </div>
                             <div className="infoRowContainer">
-                                <p>Phone:</p>
+                                <p>Phone (text preferred):</p>
                                 <p className='infoDetail'>1(647)867-0923</p>
                             </div>
                         </div>
