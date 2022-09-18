@@ -66,7 +66,7 @@ function ProjectCard(props: Project) {
 				onLoad={() => setCoverLoaded(true)}
 			/>}
 			<Popper id={id} open={open} anchorEl={anchorEl} placement={placement}>
-				<Box sx={{ width: 300, border: 0, p: 1, bgcolor: '#D9DBD4', padding: 5 }}>
+				<Box sx={{ width: 300, border: 1, p: 5, bgcolor: '#D9DBD4', padding: 5 }}>
 					<img className='showcaseImage'
 						src={image}
 						onLoad={() => setShowcaseImageLoaded(true)}
